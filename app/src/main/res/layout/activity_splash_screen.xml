@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <View
+        android:id="@+id/imageView4"
+        android:layout_width="270.4dp"
+        android:layout_height="242.4dp"
+        android:background="@drawable/logologo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tanduranString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="128dp"
+        android:fontFamily="@font/senextrabold"
+        android:text="Tanduran."
+        android:textSize="@dimen/Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sloganString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/senregularttf"
+        android:text="your soulmate plants \n right on your hand"
+        android:textSize="@dimen/Small"
+        app:layout_constraintStart_toStartOf="@+id/tanduranString"
+        app:layout_constraintTop_toBottomOf="@+id/tanduranString" />
+</androidx.constraintlayout.widget.ConstraintLayout>
